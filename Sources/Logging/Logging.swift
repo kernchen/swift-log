@@ -55,13 +55,13 @@ public struct Logger {
         @usableFromInline
         var handler: any LogHandler
 
-        @inlinable
+        // @inlinable
         init(label: String, handler: any LogHandler) {
             self.label = label
             self.handler = handler
         }
 
-        @inlinable
+        // @inlinable
         func copy() -> Storage {
             Storage(label: self.label, handler: self.handler)
         }
