@@ -74,7 +74,6 @@ public struct Logger {
     }
 
     /// A computed property to access the `LogHandler`.
-    @inlinable
     public var handler: any LogHandler {
         get {
             self._storage.handler
@@ -88,7 +87,6 @@ public struct Logger {
     }
 
     /// The metadata provider this logger was created with.
-    @inlinable
     public var metadataProvider: Logger.MetadataProvider? {
         self.handler.metadataProvider
     }
